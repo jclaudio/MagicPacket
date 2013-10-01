@@ -14,6 +14,11 @@ namespace MagicPacket_Shared
         string macAddress_string;
         byte[] macAddres_bytes;
 
+        public MagicPacket(string macAddress)
+        {
+            this.macAddress_string = macAddress;
+        }
+
         public MagicPacket(string computerName, string macAddress)
         {
             this.computerName = computerName;
@@ -26,6 +31,11 @@ namespace MagicPacket_Shared
             this.computerName = computer.Name;
             this.macAddress_string = computer.MAC;
             macAddres_bytes = convertToBytes(macAddress_string);
+        }
+
+        public byte[] getPacket()
+        {
+            return macAddres_bytes;
         }
 
         private byte[] buildPacket(byte[] macAddress)

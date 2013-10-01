@@ -10,8 +10,6 @@ namespace MagicPacket_Console
     {
         static void Main(string[] args)
         {
-            // if no arguments, throw error 1;
-            // if incorrect arguments, throw error 3;
 
         }
     }

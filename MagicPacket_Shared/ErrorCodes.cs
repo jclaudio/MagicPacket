@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MagicPacket_Shared
 {
-    class ErrorCodes
+    public class ErrorCodes
     {
         public const int NO_ERROR = 0;
         public const int ARGUMENT_ERROR = 1;

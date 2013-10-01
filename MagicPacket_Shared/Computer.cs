@@ -9,7 +9,7 @@ namespace MagicPacket_Shared
     /// <summary>
     /// Class that describes a computer object
     /// </summary>
-    class Computer
+    public class Computer
     {
         string computerName;
         string macAddress;
