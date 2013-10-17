@@ -17,9 +17,30 @@ namespace MagicPacket_Console
             computer = new Computer("Computer at ", macAddress);
         }
 
-        public Wake(Computer computer)
+        //public Wake(Computer computer)
+        //{
+        //    this.computer = computer;
+        //}
+
+        public void wake()
         {
-            this.computer = computer;
+            try
+            {
+                createPacket();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+
+            try
+            {
+                sendPacket(packet.getPacket());
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
         }
 
         private void createPacket() 
@@ -27,11 +48,9 @@ namespace MagicPacket_Console
             packet = new MagicPacket(computer);
         }
 
-        private void sendPacket()
+        private void sendPacket(byte[] magicPacket)
         {
-            
+            Net.SendPacket(magicPacket);
         }
-
-
     }
 }

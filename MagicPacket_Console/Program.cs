@@ -10,7 +10,15 @@ namespace MagicPacket_Console
     {
         static void Main(string[] args)
         {
-
+            if (args.Length == 1)
+            {
+                Wake wake = new Wake(args[0]);
+                wake.wake();
+            }
+            else
+            {
+                Console.WriteLine("Usage: wake [mac address]");
+            }
         }
     }
 }

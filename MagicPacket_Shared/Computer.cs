@@ -23,11 +23,13 @@ namespace MagicPacket_Shared
         public string Name
         {
             get;
+            set;
         }
 
         public string MAC
         {
             get;
+            set;
         }
     }
 }

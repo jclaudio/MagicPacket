@@ -42,6 +42,7 @@
     <Compile Include="ErrorCodes.cs" />
     <Compile Include="MagicPacket.cs" />
     <Compile Include="Computer.cs" />
+    <Compile Include="Net.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
